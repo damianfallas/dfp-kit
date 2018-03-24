@@ -1,0 +1,30 @@
+{
+  "name": "dfp-kit",
+  "version": "0.0.1",
+  "description": "Webpage development kit.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damian Fallas",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp-connect-php": "^0.0.8",
+    "gulp-pug": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglifycss": "^1.0.8"
+  }
+}

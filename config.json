@@ -1,0 +1,25 @@
+{
+	"gulp":{
+		"vendorDependenciesOrder": [
+			"jquery-3.2.1.min.js"
+		],
+		"jsDependenciesOrder": [
+			"cod2.js",
+			"cod1.js"
+		],
+		"paths": {
+			"src": "./src/",
+			"src_assets": "./src/assets/",
+			"src_pages": "./src/",
+			"src_js": "./src/assets/js/",
+			"src_js_vendor": "./src/assets/js/",
+			"src_css": "./src/assets/sass/",
+			"build": "./build/",
+			"build_assets": "./build/assets/",
+			"build_pages": "./build/",
+			"build_js": "./build/assets/js/",
+			"build_js_vendor": "./build/assets/js/",
+			"build_css": "./build/assets/css/"
+		}
+	}
+}
