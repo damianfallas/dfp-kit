@@ -1,7 +1,9 @@
-var gulp = require('gulp');
-config = require('../config.json');
+import gulp from 'gulp';
+import config from '../config.json';
 
-gulp.task('fonts', function () {
+const fonts_task = () => {
 	return gulp.src(config.gulp.paths.src_assets + 'fonts/**/*')
 	.pipe(gulp.dest(config.gulp.paths.build_assets + 'fonts/'));
-});
+};
+
+export default fonts_task;

@@ -1,9 +1,9 @@
-var gulp = require('gulp'),
-inject = require('gulp-inject'),
-debug = require('gulp-debug'),
-config = require('../config.json');
+import gulp from 'gulp';
+import inject from 'gulp-inject';
+import debug from 'gulp-debug';
+import config from '../config.json';
 
-gulp.task('inject', function () {
+const inject_task = () => {
 	var files = [
 		config.gulp.paths.build_js + 'vendor.js',
 		config.gulp.paths.build_js + 'components.js',
@@ -17,4 +17,6 @@ gulp.task('inject', function () {
 	.pipe(inject(sources, {addPrefix:'',relative: true}))
 	.pipe(debug({title: 'inject:'}))
 	.pipe(gulp.dest(config.gulp.paths.build));
-});
+};
+
+export default inject_task;

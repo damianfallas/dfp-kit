@@ -1,7 +1,9 @@
-var gulp = require('gulp'),
-config = require('../config.json');
+import gulp from 'gulp';
+import config from '../config.json';
 
-gulp.task('images', function () {
+const images_task  = () => {
 	return gulp.src(config.gulp.paths.src_assets + 'img/**/*')
 	.pipe(gulp.dest(config.gulp.paths.build_assets + 'img/'));
-});
+};
+
+export default images_task;
